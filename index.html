@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeatBlog | O Seu Blog de Música</title>
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Cabeçalho / Navegação -->
+  <header>
+    <a href="#" class="logo">🎵 BeatBlog</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Resenhas</a></li>
+        <li><a href="#">Entrevistas</a></li>
+        <li><a href="#">Playlists</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <!-- Banner Principal -->
+    <section class="hero">
+      <h1>Sintonize nas Melhores Músicas</h1>
+      <p>Análises de álbuns, novidades do mundo da música e recomendações semanais.</p>
+    </section>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar posts por título...">
+    </div>
+
+    <!-- Seção de Posts -->
+    <h2 class="section-title">Últimos Posts</h2>
+
+    <section class="posts-grid" id="postsGrid">
+      
+      <article class="card">
+        <img src="https://picsum.photos/400/250?concert" alt="Show ao vivo">
+        <div class="card-content">
+          <span class="card-tag">Resenha</span>
+          <h2>Análise: O Novo Álbum da Semana</h2>
+          <p>Confira a crítica completa sobre as faixas que estão dominando as paradas globais.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/400/250?vinyl" alt="Disco de vinil">
+        <div class="card-content">
+          <span class="card-tag">Especial</span>
+          <h2>A Volta do Vinil no Cenário Atual</h2>
+          <p>Entenda por que o formato físico continua ganhando espaço entre a nova geração.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/400/250?headphones" alt="Fones de ouvido">
+        <div class="card-content">
+          <span class="card-tag">Playlist</span>
+          <h2>10 Músicas para Descobrir Hoje</h2>
+          <p>Uma seleção de artistas independentes que você precisa colocar na sua lista.</p>
+        </div>
+      </article>
+
+    </section>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 BeatBlog - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Link para o arquivo JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
